@@ -1,1 +1,9 @@
 version: '3'
+
+services: 
+  switchblade:
+    build: switchbladebot/switchblade:latestxx
+    environment: 
+      - DISCORD_TOKEN
+  lavalink:
+    image: fredboat/lavalink:latest
