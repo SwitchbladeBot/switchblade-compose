@@ -1,0 +1,4 @@
+[submodule "switchblade"]
+	path = switchblade
+	url = http://github.com/SwitchbladeBot/switchblade
+	branch = master
