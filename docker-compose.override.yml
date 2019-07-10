@@ -1,0 +1,3 @@
+configs:
+  lavalink_config:
+    file: ./lavalink-config.yml

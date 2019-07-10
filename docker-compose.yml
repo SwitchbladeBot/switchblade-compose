@@ -2,8 +2,15 @@ version: '3'
 
 services: 
   switchblade:
-    build: switchbladebot/switchblade:latestxx
+    build: switchbladebot/switchblade:latest
     environment: 
       - DISCORD_TOKEN
   lavalink:
     image: fredboat/lavalink:latest
+    deploy:
+      mode: global
+      restart_policy:
+        condition: any
+    configs:
+      - source: lavalink_config
+        target: /opt/Lavalink/application.yml
